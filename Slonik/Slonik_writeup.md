@@ -106,7 +106,7 @@ PostgreSQL superusers can read files on the system using `pg_read_file()`:
 SELECT pg_read_file('/var/lib/postgresql/user.txt');
 ```
 
-**User Flag:** `2b5f3f93ef223555f4a5a8b29393fe9d`
+**User Flag:** `29d`
 
 ---
 
@@ -188,7 +188,7 @@ COPY (SELECT '') TO PROGRAM '/opt/backups/current/bash -p -c "cat /root/root.txt
 SELECT pg_read_file('/tmp/root.txt');
 ```
 
-**Root Flag:** `2cb582cd567bfd996cdb742eb1d544de`
+**Root Flag:** ``
 
 ---
 
@@ -214,15 +214,6 @@ SELECT pg_read_file('/tmp/root.txt');
 3. **SSH tunneling** can bypass network restrictions on services
 4. **COPY TO PROGRAM** in PostgreSQL = command execution
 5. **Backup cronjobs** running as root can be abused if you control what gets backed up
-
----
-
-## Flags
-
-| Flag | Value |
-|------|-------|
-| User | `2b5f3f93ef223555f4a5a8b29393fe9d` |
-| Root | `2cb582cd567bfd996cdb742eb1d544de` |
 
 ---
 
