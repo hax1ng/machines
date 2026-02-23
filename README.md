@@ -1,4 +1,4 @@
-# HackTheBox Machines
+# Hack The Box Machines
 
 A collection of writeups for HackTheBox machines.
 
